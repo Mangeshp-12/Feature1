@@ -1,0 +1,24 @@
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Tap the Box'),
+      ),
+      body: Center(
+        child: GestureDetector(
+          onTap: _incrementScore,
+          child: Container(
+            width: 200,
+            height: 200,
+            color: Colors.blue,
+            child: Center(
+              child: Text(
+                'Score: $score',
+                style: TextStyle(fontSize: 24, color: Colors.white),
+              ),
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
