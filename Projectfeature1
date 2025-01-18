@@ -1,3 +1,11 @@
+// inner
+GestureDetector(
+  onTap: _onBoxTapped, 
+  child: Stack(
+    ...
+  ),
+)
+// outer
 GestureDetector(
   onTap: _onBoxTapped, // Handles taps directly on the box
   child: Container(
