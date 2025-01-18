@@ -1,24 +1,10 @@
-
-class TapDetectorWidget extends StatelessWidget {
-  final Function onTap;
-
-  const TapDetectorWidget({Key? key, required this.onTap}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: () => onTap(), // Calls the provided onTap function
-      child: Container(
-        color: Colors.blue,
-        width: 100,
-        height: 100,
-        child: const Center(
-          child: Text(
-            'Tap Me!',
-            style: TextStyle(color: Colors.white, fontSize: 16),
-          ),
-        ),
-      ),
-    );
-  }
-}
+GestureDetector(
+  onTap: _onBoxTapped, // Handles taps directly on the box
+  child: Container(
+    width: boxSize,
+    height: boxSize,
+    color: Colors.black, // Black box
+  ),
+),
+              
+              
